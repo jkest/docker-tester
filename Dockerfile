@@ -5,4 +5,4 @@ ENV FLASK_RUN_HOST=0.0.0.0
 RUN apk add --no-cache gcc musl-dev linux-headers
 COPY ./requirements.txt requirements.txt
 RUN apk add --no-cache gcc musl-dev linux-headers
-CMD ["flask", "run"]
+CMD ["sleep", "99999"]

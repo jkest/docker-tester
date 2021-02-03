@@ -4,5 +4,5 @@ ENV FLASK_APP=foo.py
 ENV FLASK_RUN_HOST=0.0.0.0
 RUN apk add --no-cache gcc musl-dev linux-headers
 COPY . .
-RUN apk add --no-cache gcc musl-dev linux-headers
-CMD ["sleep", "99999"]
+RUN pip install -r requirements.txt
+CMD ["flask", "run"]
